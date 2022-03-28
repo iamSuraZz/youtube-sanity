@@ -11,3 +11,6 @@ export const config = {
 
   useCDN: process.env.NODE_ENV === 'production',
 }
+
+//Setup the client for fetching data in the getProps page functions
+export const sanityClient = createClient(config)
