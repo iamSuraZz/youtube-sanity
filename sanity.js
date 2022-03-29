@@ -14,3 +14,7 @@ export const config = {
 
 //Setup the client for fetching data in the getProps page functions
 export const sanityClient = createClient(config)
+
+export const urlFor = (source) => createImageUrlBuilder(config).image(source)
+
+export const useCurrentUser = createCurrentUserHook(config)
